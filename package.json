@@ -4,6 +4,26 @@
     "ejs": "^3.1.7",
     "express": "^4.17.3",
     "jquery": "^3.6.0",
-    "lodash": "^4.17.21"
-  }
+    "lodash": "^4.17.21",
+    "scripts": "^0.1.0"
+  },
+  "name": "interactive-rating-component",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VernonDodo/interactive-rating-component.git"
+  },
+  "author": "Vernon Dodo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VernonDodo/interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/VernonDodo/interactive-rating-component#readme"
 }
