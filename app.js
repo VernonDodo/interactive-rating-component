@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const $ = require("jquery");
 
+let rating = 0;
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -10,15 +12,13 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-let rating = 0;
-
 app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.post("/confirmation", (req, resp) => {
-  console.log(req);
-  res.redirect("confirmation", {rating: rating});
+app.post("/confirmation", (req, res) => {
+  console.log(req.params);
+  res.redirect("confirmation");
 });
 
 app.get("/confirmation", (req, res) => {
